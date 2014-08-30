@@ -110,14 +110,19 @@ void setup(){                                                                //s
     myserial.begin(38400);                                                    //set baud rate for software serial port to 38400
     inputstring.reserve(5);                                                   //set aside some bytes for receiving data from the PC
     sensorstring.reserve(30);                                                 //set aside some bytes for receiving data from Atlas Scientific product
+    Serial.println("*********** Testing Atlas-Scientific EZO EC Sensor");
 }
 
 
 
-void serialEvent() {                                                         //if the hardware serial port receives a char
+void serialEvent() {
+    Serial.println("*** serialEvent***");                               //if the hardware serial port receives a char
     char inchar = (char)Serial.read();                               //get the char we just received
+    Serial.print(inchar);
     inputstring += inchar;                                           //add it to the inputString
-    if(inchar == '\r') {input_stringcomplete = true;}                //if the incoming character is a <CR>, set the flag
+    if(inchar == '\r') {
+        Serial.println("");
+        input_stringcomplete = true;}                //if the incoming character is a <CR>, set the flag
 }
 
 
@@ -125,6 +130,7 @@ void serialEvent() {                                                         //i
 void loop(){                                                                   //here we go....
     
     if (input_stringcomplete){                                                   //if a string from the PC has been recived in its entierty
+        Serial.print("***> Input string: ");Serial.println(inputstring);
         myserial.print(inputstring);                                             //send that string to the Atlas Scientific product
         inputstring = "";                                                        //clear the string:
         input_stringcomplete = false;                                            //reset the flage used to tell if we have recived a completed string from the PC
@@ -132,14 +138,17 @@ void loop(){                                                                   /
     
     
     while (myserial.available()) {                                               //while a char is holding in the serial buffer
+        Serial.println("---> sensor data available");
         char inchar = (char)myserial.read();                                  //get the new char
         sensorstring += inchar;                                               //add it to the sensorString
-        if (inchar == '\r') {sensor_stringcomplete = true;}                   //if the incoming character is a <CR>, set the flag
+        if (inchar == '\r') {
+            Serial.print("***> Sensor data: ");Serial.println(sensorstring);
+            sensor_stringcomplete = true;
+        }                   //if the incoming character is a <CR>, set the flag
     }
     
     
     if (sensor_stringcomplete){                                                 //if a string from the Atlas Scientific product has been received in its entirety
-        Serial.print(sensorstring);                                             //use the hardware serial port to send that data to the PC
         sensorstring = "";                                                      //clear the string:
         sensor_stringcomplete = false;                                          //reset the flag used to tell if we have received a completed string from the Atlas Scientific product
     }

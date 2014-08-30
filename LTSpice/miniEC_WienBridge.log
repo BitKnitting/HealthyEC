@@ -1,4 +1,4 @@
-Circuit: * \\psf\Margaret\BitKnitting\prototypes\LTSpice\EC\miniEC_WienBridge.asc
+Circuit: * \\psf\Home\Documents\Lettuce Buddy HW\HealthyEC\LTSpice\miniEC_WienBridge.asc
 
 Direct Newton iteration for .op point succeeded.
 Heightened Def Con from 6.3913e-007 to 6.40131e-007
@@ -854,8 +854,8 @@ Heightened Def Con from 4.00885e-006 to 4.00997e-006
 Heightened Def Con from 4.03328e-006 to 4.0343e-006
 Heightened Def Con from 4.03433e-006 to 4.03633e-006
 
-Date: Sun Aug 24 11:14:08 2014
-Total elapsed time: 3.074 seconds.
+Date: Sat Aug 30 08:14:04 2014
+Total elapsed time: 1.607 seconds.
 
 tnom = 27
 temp = 27
@@ -868,7 +868,7 @@ rejected = 14911
 matrix size = 32
 fillins = 58
 solver = Normal
-Matrix Compiler1:     282 opcodes  1.2/[0.7]/2.5
+Matrix Compiler1: 5.17 KB object code size  1.9/0.7/[0.5]
 Matrix Compiler2: 3.62 KB object code size  0.5/0.6/[0.5]
 
 
