@@ -38,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 6
 Title ""
-Date "27 aug 2014"
+Date "15 sep 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -77,11 +77,11 @@ S 7350 2000 2200 1000
 U 53EF382C
 F0 "EC" 50
 F1 "EC.sch" 50
-F2 "EC_GND" O L 7350 2750 60 
-F3 "EC_Probe" I R 9550 2350 60 
-F4 "EC_Voltage" O L 7350 2550 60 
-F5 "V+_WallWart" O L 7350 2150 60 
-F6 "EC_Probe_GND" O R 9550 2550 60 
+F2 "V+_WallWart" O L 7350 2150 60 
+F3 "EC_V+" I R 9550 2350 60 
+F4 "EC_Value" I R 9550 2550 60 
+F5 "EC_V" I L 7350 2550 60 
+F6 "EC_GND" I L 7350 2750 60 
 $EndSheet
 $Sheet
 S 950  2400 2450 750 
@@ -266,8 +266,6 @@ Wire Wire Line
 Wire Wire Line
 	3550 4800 3400 4800
 Wire Wire Line
-	3400 4600 4400 4600
-Wire Wire Line
 	3400 5400 4400 5400
 Wire Wire Line
 	3400 5550 4400 5550
@@ -326,4 +324,33 @@ Wire Wire Line
 Wire Wire Line
 	3900 2150 7350 2150
 Connection ~ 5350 2150
+$Comp
+L R R?
+U 1 1 5415F8F0
+P 3800 4600
+F 0 "R?" V 3880 4600 40  0000 C CNN
+F 1 "499" V 3807 4601 40  0000 C CNN
+F 2 "~" V 3730 4600 30  0000 C CNN
+F 3 "~" H 3800 4600 30  0000 C CNN
+	1    3800 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 4600 3400 4600
+Wire Wire Line
+	4050 4600 4400 4600
+$Comp
+L CONN_1 TP?
+U 1 1 5415F9F5
+P 4250 4500
+F 0 "TP?" H 4330 4500 40  0000 L CNN
+F 1 "TP" H 4250 4555 30  0001 C CNN
+F 2 "" H 4250 4500 60  0000 C CNN
+F 3 "" H 4250 4500 60  0000 C CNN
+	1    4250 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4500 4100 4600
+Connection ~ 4100 4600
 $EndSCHEMATC
