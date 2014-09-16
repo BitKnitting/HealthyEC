@@ -38,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 6
 Title ""
-Date "15 sep 2014"
+Date "16 sep 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -62,7 +62,7 @@ Wire Wire Line
 	5750 2400 6350 2400
 Wire Wire Line
 	5750 2800 6350 2800
-Text HLabel 2500 3550 0    60   Output ~ 0
+Text HLabel 2500 4550 0    60   Output ~ 0
 ECPump
 Text HLabel 6400 3600 2    60   Output ~ 0
 ~RESET
@@ -92,5 +92,5 @@ GND_ARD
 Wire Wire Line
 	2500 2650 3550 2650
 Wire Wire Line
-	3550 3550 2500 3550
+	3550 4550 2500 4550
 $EndSCHEMATC

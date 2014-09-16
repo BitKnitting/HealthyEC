@@ -36,9 +36,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 4 6
 Title ""
-Date "15 sep 2014"
+Date "16 sep 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -76,4 +76,44 @@ Wire Wire Line
 	4050 2550 4050 2800
 Wire Wire Line
 	4050 2800 4700 2800
+$Comp
+L LED D?
+U 1 1 5418A926
+P 4450 3200
+F 0 "D?" H 4450 3300 50  0000 C CNN
+F 1 "LED" H 4450 3100 50  0000 C CNN
+F 2 "~" H 4450 3200 60  0000 C CNN
+F 3 "~" H 4450 3200 60  0000 C CNN
+	1    4450 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5418A92C
+P 4450 3900
+F 0 "R?" V 4530 3900 40  0000 C CNN
+F 1 "1K" V 4457 3901 40  0000 C CNN
+F 2 "~" V 4380 3900 30  0000 C CNN
+F 3 "~" H 4450 3900 30  0000 C CNN
+	1    4450 3900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4450 3400 4450 3650
+Wire Wire Line
+	4450 4150 4450 4400
+$Comp
+L AGND #PWR?
+U 1 1 5418A935
+P 4450 4400
+F 0 "#PWR?" H 4450 4400 40  0001 C CNN
+F 1 "AGND" H 4450 4330 50  0000 C CNN
+F 2 "" H 4450 4400 60  0000 C CNN
+F 3 "" H 4450 4400 60  0000 C CNN
+	1    4450 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3000 4450 2800
+Connection ~ 4450 2800
 $EndSCHEMATC
