@@ -1,0 +1,4 @@
+4:44:53 AM: Failed to create a temporary file name (error 267: the directory name is invalid.)
+4:44:53 AM: can't open user configuration file.
+4:44:53 AM: Failed to create a temporary file name (error 267: the directory name is invalid.)
+4:44:53 AM: can't open user configuration file.
