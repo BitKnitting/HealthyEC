@@ -363,7 +363,7 @@ Connection ~ 7000 1600
 Wire Wire Line
 	7200 1600 7200 1700
 Text HLabel 7900 3150 2    60   Input ~ 0
-EC_Voltage
+EC_Meas
 Text HLabel 7900 3250 2    60   Input ~ 0
-EC_GND
+VGND
 $EndSCHEMATC
