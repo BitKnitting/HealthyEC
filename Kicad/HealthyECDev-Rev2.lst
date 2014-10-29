@@ -1,0 +1,17 @@
+eeschema (2013-07-07 BZR 4022)-stable  >> Creation date: 10/29/2014 11:41:28 AM
+#Cmp ( order = Reference )
+| ARD1       ARDUINOPINS               
+                 
+              
+                     
+| R11        0K          
+| R12        0K          
+      
+
+                
+       
+   
+  
+#End Cmp
+
+#End List

@@ -1,0 +1,64 @@
+eeschema (2013-07-07 BZR 4022)-stable  >> Creation date: 10/2/2014 3:24:53 AM
+#Cmp ( order = Reference )
+| ARD1       ARDUINOPINS 
+| C1         10u         
+| C2         .1u         
+| C3         1u          
+| C4         18p         
+| C5         18p         
+| C6         .1u         
+| C7         1u          
+| C8         10u         
+| C9         100n        
+| C10        100n        
+| C11        100n        
+| D1         4004        
+| D2         LED         
+| D3         DIODE       
+| D4         DIODE       
+| D5         DIODE       
+| L5         1U          
+| P1         CONN_4      
+| P2         WallWartExtension
+| Q1         TIP122      
+| R1         499         
+| R2         1K          
+| R3         499         
+| R4         499         
+| R5         499         
+| R6         499         
+| R7         499         
+| R8         2.2K        
+| R9         1K          
+| R10        10K         
+| R11        3K          
+| R12        47K         
+| R13        100K        
+| R14        1K          
+| R15        22K         
+| R16        10K         
+| R17        1K          
+| R18        1K          
+| R19        1K          
+| TP1        TP          
+| TP2        TP          
+| TP3        TP          
+| TP4        TP          
+| TP5        TP          
+| TP6        TP          
+| TP9        CONN_1      
+| TP10       CONN_1      
+| TP11       CONN_1      
+| TP13       CONN_1      
+| TP14       CONN_1      
+| TP15       CONN_1      
+| TP16       CONN_1      
+| TP17       CONN_1      
+| TP18       CONN_1      
+| TP20       CONN_1      
+| U1         MCP6244     
+| U2         MCP3901     
+| X1         CRYSTAL     
+#End Cmp
+
+#End List
