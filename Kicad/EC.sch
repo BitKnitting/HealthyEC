@@ -36,9 +36,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 4 6
 Title ""
-Date "29 oct 2014"
+Date "14 nov 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -86,13 +86,13 @@ $EndComp
 $Comp
 L R R19
 U 1 1 5416D6EF
-P 10750 1950
-F 0 "R19" V 10830 1950 40  0000 C CNN
-F 1 "1K" V 10757 1951 40  0000 C CNN
-F 2 "~" V 10680 1950 30  0000 C CNN
-F 3 "~" H 10750 1950 30  0000 C CNN
-	1    10750 1950
-	1    0    0    -1  
+P 10500 2200
+F 0 "R19" V 10580 2200 40  0000 C CNN
+F 1 "1K" V 10507 2201 40  0000 C CNN
+F 2 "~" V 10430 2200 30  0000 C CNN
+F 3 "~" H 10500 2200 30  0000 C CNN
+	1    10500 2200
+	0    -1   -1   0   
 $EndComp
 $Comp
 L R R16
@@ -108,13 +108,13 @@ $EndComp
 $Comp
 L C C11
 U 1 1 5416D6FD
-P 10400 1900
-F 0 "C11" H 10400 2000 40  0000 L CNN
-F 1 "100n" H 10406 1815 40  0000 L CNN
-F 2 "~" H 10438 1750 30  0000 C CNN
-F 3 "~" H 10400 1900 60  0000 C CNN
-	1    10400 1900
-	1    0    0    -1  
+P 10450 1600
+F 0 "C11" H 10450 1700 40  0000 L CNN
+F 1 "100n" H 10456 1515 40  0000 L CNN
+F 2 "~" H 10488 1450 30  0000 C CNN
+F 3 "~" H 10450 1600 60  0000 C CNN
+	1    10450 1600
+	0    -1   -1   0   
 $EndComp
 $Comp
 L C C10
@@ -271,17 +271,11 @@ Wire Wire Line
 Wire Wire Line
 	10600 3400 10750 3400
 Wire Wire Line
-	9350 1600 10750 1600
-Wire Wire Line
 	1250 2250 1800 2250
 Wire Wire Line
 	1400 2250 1400 2400
 Wire Wire Line
-	1400 2800 1400 2950
-Wire Wire Line
 	1400 2950 1650 2950
-Wire Wire Line
-	1650 2950 1650 2850
 Wire Wire Line
 	1550 3550 1550 2950
 Connection ~ 1550 2950
@@ -302,8 +296,6 @@ Wire Wire Line
 Wire Wire Line
 	8150 6150 8750 6150
 Connection ~ 8450 6150
-Wire Wire Line
-	9750 2200 10750 2200
 Wire Wire Line
 	8500 2300 9050 2300
 Wire Wire Line
@@ -519,21 +511,8 @@ Text GLabel 7650 2300 0    60   Output ~ 0
 AC_Shrunk
 Wire Wire Line
 	6250 2050 6250 2600
-Text Label 1250 2250 0    60   ~ 0
-EC_Meas
-Wire Wire Line
-	10750 1600 10750 1700
-Wire Wire Line
-	10400 1700 10400 1600
-Connection ~ 10400 1600
-Wire Wire Line
-	10400 2100 10400 2200
-Connection ~ 10400 2200
-Text HLabel 10550 2400 0    60   Input ~ 0
+Text HLabel 10800 2450 0    60   Input ~ 0
 VGND
-Wire Wire Line
-	10550 2200 10550 2400
-Connection ~ 10550 2200
 $Comp
 L C C12
 U 1 1 544B8DF0
@@ -610,10 +589,10 @@ Connection ~ 9400 4200
 Wire Wire Line
 	8750 4200 8850 4200
 $Comp
-L POT RV2
+L POT 50K
 U 1 1 544BB5F8
 P 7850 1850
-F 0 "RV2" H 7850 1750 50  0000 C CNN
+F 0 "50K" H 7850 1750 50  0000 C CNN
 F 1 "POT" H 7850 1850 50  0000 C CNN
 F 2 "~" H 7850 1850 60  0000 C CNN
 F 3 "~" H 7850 1850 60  0000 C CNN
@@ -675,12 +654,10 @@ Text Label 8750 3050 0    60   ~ 0
 pin 7
 Text Label 10000 3150 0    60   ~ 0
 pin 6
-Text Label 9900 2200 0    60   ~ 0
+Text Label 9800 2200 0    60   ~ 0
 pin 5
 Text Label 8700 1600 0    60   ~ 0
 f1
-Text Label 9950 1600 0    60   ~ 0
-f2
 Text Label 9300 4200 0    60   ~ 0
 G1
 Text Label 4800 -1200 0    60   ~ 0
@@ -744,4 +721,29 @@ Wire Wire Line
 Wire Wire Line
 	7500 2150 7850 2150
 Connection ~ 7850 2150
+Wire Wire Line
+	10650 1600 10800 1600
+Wire Wire Line
+	10800 1600 10800 2200
+Wire Wire Line
+	10800 2200 10750 2200
+Wire Wire Line
+	9350 1600 10250 1600
+Wire Wire Line
+	9750 2200 10250 2200
+Wire Wire Line
+	10050 1600 10050 2200
+Connection ~ 10050 2200
+Connection ~ 10050 1600
+Wire Wire Line
+	10800 2450 10950 2450
+Wire Wire Line
+	10950 2450 10950 1950
+Wire Wire Line
+	10950 1950 10800 1950
+Connection ~ 10800 1950
+Wire Wire Line
+	1400 2800 1400 2950
+Wire Wire Line
+	1650 2950 1650 2850
 $EndSCHEMATC
